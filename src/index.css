@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap'); 
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #f1356d;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #f1356d;
+}
+
+/* blog previews / list */
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.blog-preview:hover {
+  cursor: pointer;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.blog-preview h3 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+
+/* sabeeh edits */
+.content {
+  padding: 50px 340px;
+}
+.h-content1{
+  float: left; 
+  width: 70%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.h-content2{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.bold{
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+.title-heading{
+  border-bottom: 1px #333 solid;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.title-content{
+  padding: 10px;
+}
+
+.myBtn{
+  color: white;
+  background-color: #f1356d;
+  border-radius: 8px;
+  border: 0;
+  padding: 10px;
+}
+
+.myBtn:hover, .myBtn-2:hover{
+  cursor: pointer;
+}
+
+.span-btn{
+  color: white;
+  background-color: #333;
+  border: 0;
+  padding: 5px 10px;
+  font-size: 10px;
+}
+
+.blog-preview a{
+  text-decoration: none;
+}
+
+/* loader */
+.loader {
+  border: 5px solid #f3f3f3; /* Light grey */
+  border-top: 5px solid #f1356d; /* Blue */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* blog details page */
+.blog-details h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+.blog-details div {
+  margin: 20px 0;
+}
