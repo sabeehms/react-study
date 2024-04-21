@@ -7,13 +7,14 @@ const useFetch = (url) => {
 
     useEffect(() => {
         // console.log('use effect ran');
+
         const abortCont = new AbortController();
 
         setTimeout(() => {
             fetch(url, {signal: abortCont.signal})
                 .then(res => {
                     if(!res.ok){
-                        throw Error('Could not fetch data for that resource.');
+                        throw Error('Couldnt fetch data for that resource.');
                     }
                     else if(res.ok){
                         console.log('Data fetched successfully!');;
